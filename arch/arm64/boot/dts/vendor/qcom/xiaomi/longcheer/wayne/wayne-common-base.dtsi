@@ -41,23 +41,9 @@
 };
 
 &pm660_haptics {
-	/delete-property/ qcom,correct-lra-drive-freq;
-	qcom,play-mode = "buffer";
-	qcom,vmax-mv = <2204>;
-	qcom,wave-shape = "sine";
-	qcom,wave-play-rate-us = <4878>;
-	qcom,int-pwm-freq-khz = <253>;
-	qcom,brake-pattern = [02 02 01 00];
-	qcom,wave-samples = [3e 3e 3e 00 00 00 00 00];
-	qcom,wave-samples-two = [3e 3e 3e 3e 00 00 00 00];
-	qcom,wave-samples-three = [3e 3e 3e 3e 3e 00 00 00];
-	qcom,wave-rep-cnt = <1>;
-	qcom,wave-samp-rep-cnt = <1>;
-	qcom,lra-high-z = "opt1";
-	qcom,lra-auto-res-mode = "none";
-	qcom,lra-hw-auto-resonance;
+	qcom,actuator-type = "erm";
+	qcom,vmax-mv = <3000>;
 };
-
 
 /* msm-audio.dtsi wayne specific diff */
 &int_codec {
