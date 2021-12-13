@@ -1,8 +1,8 @@
-config WIREGUARD_COMPAT
+ config WIREGUARD_COMPAT
 	tristate "IP: WireGuard secure network tunnel"
 	depends on NET && INET
 	depends on IPV6 || !IPV6
-        depends on !WIREGUARD
+    depends on !WIREGUARD
 	select NET_UDP_TUNNEL
 	select DST_CACHE
 	select CRYPTO
