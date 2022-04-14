@@ -22,7 +22,6 @@
 #include <linux/types.h>
 #include <linux/miscdevice.h>
 #include <linux/bitops.h>
-#include <linux/msm_dma_iommu_mapping.h>
 #include <linux/vmstat.h>
 #include "ion_kernel.h"
 #include "../uapi/ion.h"
@@ -146,7 +145,6 @@ struct ion_buffer {
 	struct sg_table *sg_table;
 	struct list_head attachments;
 	struct list_head vmas;
-	struct msm_iommu_data iommu_data;
 };
 
 void ion_buffer_destroy(struct ion_buffer *buffer);
