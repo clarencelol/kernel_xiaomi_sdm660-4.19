@@ -477,7 +477,6 @@ struct mmc_host *mmc_alloc_host(int extra, struct device *dev)
 }
 EXPORT_SYMBOL(mmc_alloc_host);
 
-<<<<<<< HEAD
 static ssize_t enable_show(struct device *dev,
 		struct device_attribute *attr, char *buf)
 {
