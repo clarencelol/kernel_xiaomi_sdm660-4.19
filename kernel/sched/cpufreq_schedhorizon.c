@@ -1499,4 +1499,8 @@ struct cpufreq_governor *cpufreq_default_governor(void)
 }
 #endif
 
-cpufreq_governor_init(schedhorizon_gov);
+static int __init sugov_register(void)
+{
+	return cpufreq_register_governor(&schedhorizon_gov);
+}
+fs_initcall(sugov_register);
