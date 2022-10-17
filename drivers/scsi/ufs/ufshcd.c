@@ -275,7 +275,6 @@ static void ufshcd_update_uic_error_cnt(struct ufs_hba *hba, u32 reg, int type)
 
 static void ufshcd_hex_dump(struct ufs_hba *hba, const char * const str,
 			    const void *buf, size_t len)
-
 {
 	/*
 	 * device name is expected to take up ~20 characters and "str" passed
